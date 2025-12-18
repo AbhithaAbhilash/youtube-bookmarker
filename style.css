@@ -4,19 +4,53 @@ body {
   padding: 10px;
 }
 
-h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
+input, select, button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 6px;
 }
 
 button {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 
-li {
+h3 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.bookmark-item a {
+  text-decoration: none;
+  color: #065fd4;
   font-size: 13px;
-  margin-bottom: 6px;
+}
+#currentVideo {
+  font-size: 13px;
+  margin: 6px 0;
+  color: #444;
+  font-weight: 500;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #cc0000;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bookmark-item a {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#bookmarkList {
+  max-height: 300px;
+  overflow-y: auto;
 }

@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Bookmark Extension",
-  "version": "1.0",
-  "description": "Save bookmarks for YouTube videos with timestamps",
-  "permissions": ["tabs", "storage"],
+  "name": "YouTube Bookmarker",
+  "version": "1.1",
+  "description": "Bookmark YouTube videos and organize them into categories.",
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+  "permissions": ["storage", "tabs"]
 }

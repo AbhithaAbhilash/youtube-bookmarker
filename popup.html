@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>YouTube Bookmarks</title>
+  <meta charset="UTF-8">
+  <title>YouTube Bookmarker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h2>YouTube Bookmarker</h2>
 
-  <h2>YouTube Bookmarks</h2>
+  <p id="currentVideo">No YouTube video detected</p>
 
-  <button id="addBookmark">Bookmark Current Video</button>
+  <select id="category">
+    <option value="Uncategorized">Uncategorized</option>
+    <option value="Education">Education</option>
+    <option value="Music">Music</option>
+    <option value="Tech">Tech</option>
+    <option value="Entertainment">Entertainment</option>
+  </select>
 
-  <ul id="bookmarkList"></ul>
+  <button id="saveBtn">Save Bookmark</button>
+
+  <hr />
+  <div id="bookmarkList"></div>
 
   <script src="popup.js"></script>
 </body>
